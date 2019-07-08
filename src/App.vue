@@ -10,6 +10,7 @@
     <img v-if="mostrarMeme4" src="./img/meme4.png" width="500px" height="500px">
     <img v-if="mostrarMeme5" src="./img/meme5.png" width="500px" height="500px">
     <br>
+    <p>Selecione o Meme</p>
     <tr>
       <td>
         <img src="./img/meme1.png" alt="meme1" width="100px" height="100px">
@@ -39,8 +40,9 @@
     </tr>
     <button class="btn btn-success" @click="escolher">Selecionar</button>
     <hr>
+    <p>Escreva a frase do Meme</p>
     <input type="text" style="width: 400px; height: 30px;" v-model="fraseDoMeme">
-    <br>
+    <hr>
     <button class="btn btn-primary">Gerar meme</button>
     <br><br>
   </div>
@@ -56,7 +58,7 @@ export default {
   },
   methods:{
     escolher(){
-      alert(this.memeSelecionado);
+      
     }
   }
 }
